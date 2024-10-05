@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <form action="cadrasto.js" method="post">
+        <p>
+            <label for="ifoto">Foto do perfil:</label>
+            <input type="file" name="nfoto" id="ifoto" accept="image/*">
+        </p>
+        <p>
+            <label for="iidade">Idade</label>
+            <input type="number" name="nindate" id="iidade" min="1" max="120">
+        </p>
+        <p>
+            <fieldset style="width: 100px;">
+                <legend>Sexo</legend>
+
+                <input type="radio" name="nsexo" id="imacho" checked>
+                <label for="imacho">Masculino</label>
+                
+                <input type="radio" name="nsexo" id="ifema">
+                <label for="ifema">Feminino</label>
+            </fieldset>
+        </p>
+        <p>
+            <label for="itel">Telefone:</label>
+            <input type="tel" name="tel" id="itel" pattern="\([0-9]{2}\)([\s])[0-9]{4,6}-[0-9]{4}" placeholder="(XX) XXXX-XXXX">
+        </p>
+        <P>
+            <label for="imail">E-mail:</label>
+            <input type="email" name="email" id="imail" size="30" maxlength="50">
+        </P>
+        <p>
+            <label for="isenha">Senha</label>
+            <input type="password" name="Senha" id="isenha" minlength="3" maxlength="8" size="8">
+        </p>
+        <p>
+            <label for="imes">Mês de aniversário:</label>
+            <input type="month" name="mes" id="imes">
+        </p>
+        <p>
+            <label for="idia">Dia da compra:</label>
+            <input type="date" name="dia" id="idia">
+        </p>
+        <p>
+            <label for="ihora">Hora da compra:</label>
+            <input type="time" name="Hora" id="ihora">
+        </p>
+        <p>
+            <label for="icor">Cor:</label>
+            <input type="color" name="cor" id="icor">
+        </p>
+        <p>
+            <label for="isatis">Nível de satisfação</label>
+            <input type="range" name="satisfacao" id="isatis"> 
+        </p>
+        <p>
+            <input type="checkbox" name="termos" id="itermos">
+            <label for="itermos">Aceito os <a href="http://">termos de uso</a></label>
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
