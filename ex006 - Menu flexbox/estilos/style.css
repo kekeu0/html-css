@@ -44,7 +44,7 @@ header > nav > a {
     text-decoration: none;
     text-align: center;
 
-    flex: 1 0 auto;
+    flex: 0 0 auto;
 }
 
 header > nav > a:hover {
