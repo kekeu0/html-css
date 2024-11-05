@@ -1,0 +1,146 @@
+@charset "UTF-8";
+
+main{
+    flex: 1;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 100%;
+    max-width: 1440px;
+}
+
+.main_info {
+    width: 100%;
+    max-width: 570px;
+}
+
+.main_info  p {
+    font-size: 18px;
+    margin: 20px 10px 28px;
+    text-shadow: 4px 4px 5px black;
+}
+
+.main_info div {
+    display: flex;
+    column-gap: 32px;
+    margin-left: 15px;
+    margin-right: 25px;
+}
+
+.main_info div a, .main_info div button {
+   width: 100%;
+   padding: 10px 4px;
+   border-radius: 3px;
+   margin-top: 20px;
+   
+   font-size: 16px;
+   font-weight: 600;
+   text-align: center;
+   text-transform: uppercase;
+   
+
+   transform: skew(-10deg);
+   transition: 0.3s;
+}
+
+.main_info div a:hover, .main_info div button:hover {
+    box-shadow: 5px 6px 3px rgba(0, 0, 0, 0.685);
+
+    transform: translateY(-6px);
+    transition: 0.3s;
+}
+
+.main_info  div  a {
+    background: var(--red);
+    letter-spacing: 2px;
+}
+
+.main_info div button {
+    background: transparent;
+    border: 2px solid var(--green);
+    letter-spacing: 0.3px;
+}
+.text_butos {
+    display: flex;
+    flex-direction: column;
+}
+.text_butos p {
+    width: 30vw;
+}
+
+@media screen and (min-width: 750px) and (max-width: 975px){
+    
+    main > img {
+        width: 500px;
+    }
+    .main_info p {
+        font-size: 16px;
+        margin-left: 15px;
+    }
+    .main_info div  {
+        font-size: 15px;
+        width: 90%;
+        margin: auto;
+
+    }
+    .main_info div button {
+        margin-right: 15px;
+    }
+}
+@media screen and (max-width: 759px){
+    main {
+        flex-direction: column;
+    }
+
+    img {
+        width: 430px;
+        padding-top: 0px ;
+        margin-top: 0px;
+    }
+
+    .text_butos {
+        flex-direction: row-reverse;
+        margin-bottom: 0px;
+        padding-bottom: 0px;
+    }
+    .text_butos p {
+        width: 100vw;
+        margin-right: -20px;
+        margin-top: -140px;
+    }
+    
+    .div_button{
+        flex-direction: column;
+        margin-top: 0px;
+        padding-left: 20px;
+        margin-bottom: 0px;
+        padding-bottom: 0px;
+    }
+
+    .main_info {
+        width: 100%;
+    }
+
+    .main_info p {
+        font-size: 16px;
+        text-align: right;
+    }
+
+    .main_info div  {
+        font-size: 15px;
+        width: 90%;
+        margin: auto;
+        float: left;
+    }
+
+    .main_info  img {
+        width: 200px;
+        padding: 50px 0px 0px 30px;
+    }
+
+    .main_info div button {
+        margin-right: 15px;
+    }
+}
