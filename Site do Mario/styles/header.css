@@ -100,7 +100,7 @@ header img {
  #button_menu > button > span {
      width: 40px;
      height: 4px;
-     background: #333;
+     background: #615959;
      border-radius: 8px;
 
      transition: 0.4s;
@@ -142,9 +142,9 @@ header img {
     nav {
         position: absolute;
         right: 0;
-        width: 70vw;
-        height: 200vw;
-        background: rgba(0, 0, 0, 0.897);
+        width: 100vw;
+        height: 317.5vw;
+        background: rgba(0, 0, 0, 0.911);
         flex-direction: column;
         align-items: center;
         justify-content: space-around;
@@ -166,8 +166,8 @@ header img {
 
      .navigation {
         position: absolute;
-        padding-top: 75vw;
-        row-gap: 13vw;
+        padding-top: 110vw;
+        row-gap: 16vw;
         margin-left: 15px;
     }
 
@@ -179,10 +179,10 @@ header img {
     nav.active .navigation_social {
         flex-direction: row;
         width: 80vw;
-        height: 180vw;
+        height: 250vw;
         justify-content: center;
         align-items: end;
-        column-gap: 5vw;
+        column-gap: 6vw;
         margin-left: -0.5px;
 
         transition: 0.3s;

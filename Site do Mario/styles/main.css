@@ -42,14 +42,14 @@ main{
    
 
    transform: skew(-10deg);
-   transition: 0.3s;
+   transition: 0.5s;
 }
 
 .main_info div a:hover, .main_info div button:hover {
     box-shadow: 5px 6px 3px rgba(0, 0, 0, 0.685);
 
     transform: translateY(-6px);
-    transition: 0.3s;
+    transition: 0.4s;
 }
 
 .main_info  div  a {
@@ -124,7 +124,7 @@ main{
     }
 
     .main_info p {
-        font-size: 16px;
+        font-size: 14px;
         text-align: right;
     }
 
@@ -133,11 +133,12 @@ main{
         width: 90%;
         margin: auto;
         float: left;
+        margin-left: 3px;
     }
 
     .main_info  img {
-        width: 200px;
-        padding: 50px 0px 0px 30px;
+        width: 11rem;
+        padding: 50px 10px 0px 15px;
     }
 
     .main_info div button {

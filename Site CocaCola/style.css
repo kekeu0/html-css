@@ -1,0 +1,179 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+    color: white;
+}
+
+:root {
+    --cor0:#121212;
+    --cor1:#e51e2a;
+    --font0:"Montserrat";
+    --font1:"Edu AU VIC WA NT Pre";
+}
+
+body {
+    background: var(--cor0);
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    overflow: hidden;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+header{
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+
+    padding: 40px 50px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header img {
+    max-width: 150px;
+    position: relative;
+    left: 1vw;
+}
+.navigation ul {
+    display: flex;
+    column-gap: 50px;
+    font-family: var(--font1);
+}
+.navigation li {
+    position: relative;
+}
+.navigation a:hover {
+    color: #c9c9c9;
+}
+.navigation a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+
+    width: 100%;
+    height: 1px;
+    background: var(--cor1);
+
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.4s;
+}
+.navigation a:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+    transition: transform 0.4s;
+}
+
+section {
+    align-self: flex-end;
+    width: 70vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    bottom: 300px;
+    left: 0px;
+}
+
+.circle {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: var(--cor1);
+    clip-path: circle(70% at bottom right);
+    z-index: -1;
+    top: -40px;
+}
+.boxcola {
+    position: absolute;
+    right: 30px;
+    bottom: 130px;
+}
+.boxcola img {
+    width: 200px;
+}
+
+main {
+    padding: 50px;
+    min-height: 50vh;
+    width: 70vw;
+    display: flex;
+    position: relative;
+    top: 200px;
+    align-items: center;
+}
+.text {
+    font-family: var(--font0);
+    color: white;
+    width: 30vw;
+}
+.text h2 {
+    font-size: 2rem;
+}
+.text p {
+    padding: 17px 0px;
+}
+.text span {
+    color: var(--cor1);
+    font-size: 7rem;
+}
+.text a {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 17px;
+    border-radius: 40px;
+    font-family: var(--font1);
+    font-size: 13px;
+    letter-spacing: .3em;
+    background-color: var(--cor1);
+    transition: .3s ease-in-out;
+}
+.text a:hover {
+    transform: translateY(-6px);
+    box-shadow: 3px 7px 5px black;
+}
+
+.social {
+    position: relative;
+    bottom: 600px;
+}
+.social .icons {
+    display: flex;
+    flex-flow: row nowrap;
+}
+.icons li a {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: rgba(148, 155, 148, 0.133);
+    margin-left: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s ease-in-out;
+}
+.icons li a:hover {
+    background: var(--cor1);
+    transform: translateY(-10px);
+}
+.icons li a img {
+    transform: scale(.5);
+    filter: invert(1);
+}
+
+
+
