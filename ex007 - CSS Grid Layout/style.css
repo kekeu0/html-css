@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 1.2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    color: white;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 100px;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+.header {
+    background: #1a191c;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.menu {
+    display: flex;
+}
+
+.menu li {
+    margin-left: 10px;
+}
+
+.menu li a {
+    display: block;
+    padding: 10px;
+}
