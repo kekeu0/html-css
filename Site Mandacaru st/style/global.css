@@ -14,3 +14,10 @@
     --verde-f: #293f32;
     --amarelo: #f1b249;
 }
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: white;
+}
