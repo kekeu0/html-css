@@ -1,3 +1,59 @@
 body {
     background-image: linear-gradient(to right, var(--verde-1), var(--verde-4));
 }
+
+main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+
+    padding: 60px;
+}
+
+.secao-t {
+
+    & h1{
+        font-family: var(--font-especial);
+        font-size: 7rem;
+        text-transform: uppercase;
+    }
+
+    & h2{
+        font-family: var(--font-base);
+        text-transform: uppercase;
+        font-weight: 500;
+        font-size: 1.3rem;
+        margin-left: 4px;
+    }
+
+    & p{
+        font-family: var(--font-base);
+        letter-spacing: 2px;
+        margin-left: 4px;
+    }
+
+    & button{
+        background: none;
+        border: 3px solid var(--amarelo);
+        border-radius: 50px;
+        width: 10rem;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        
+
+        & p{
+            margin-left: 20px;
+            letter-spacing: normal;
+        }
+    }
+
+    & span{
+        background: var(--amarelo);
+        border-radius: 50%;
+        font-size: 50px;
+        margin-left: 65px;
+    }
+}
