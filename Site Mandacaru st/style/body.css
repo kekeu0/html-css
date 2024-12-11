@@ -1,18 +1,22 @@
 body {
     background-image: linear-gradient(to right, var(--verde-1), var(--verde-4));
+    
 }
 
 main {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
 
-    padding-left: 60px;
+    position: relative;
+
 }
 
 .secao-t {
+
+    padding-left: 60px;
 
     & h1{
         font-family: var(--font-especial);
@@ -65,7 +69,7 @@ main {
 
 .secao-f {
     width: 45vw;
-    height: 100%;
+    height: 85vh;
     background: linear-gradient(to right, #dcf7cb, var(--verde-4));
     border-radius: 90px 0px 0px 0px;
     position: relative;
@@ -86,17 +90,30 @@ main {
         height: 100%;
         gap: 25px;
         
+        
         & .material-symbols-outlined {
             font-size: 50px;
+            padding-top: 170px;
         }
-        & span {
-        clip-path: circle(3px);
-        background-color: white;
-        width: 10px;
-        height: 10px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+
+
+        & .bolas {
+            width: 5%;
+            height: 50vh;
+            margin-right: 5.5px;
+
+            display: flex;
+            align-items: center;
+            justify-content: start;
+            flex-direction: column;
+            gap: 50px;
+
+                & span {
+                clip-path: circle(4px);
+                background-color: white;
+                width: 10px;
+                height: 10px;
+                }
         }
 
     }
@@ -105,7 +122,10 @@ main {
 footer {
     display: grid;
     grid-template-columns: 1.2fr 1fr 1.7fr 1.7fr 1fr;
-    grid-template-rows: 150px;
+    grid-template-rows: 155px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
 
     & .seta{
         display: flex;
@@ -115,6 +135,7 @@ footer {
         & span {
             font-size: 60px;
             transform: rotate(180deg);
+            margin-top: 15px;
         }
         
    }
@@ -127,9 +148,13 @@ footer {
         justify-content: center;
         align-items: center;
 
+            & ul {
+                margin: 5px 0px 0px 5px;
+            }
+
             & img {
             max-width: 40px;
-            margin: 7px;
+            margin: 7px
         }
     }
 
