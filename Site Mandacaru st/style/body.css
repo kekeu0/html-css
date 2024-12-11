@@ -154,7 +154,8 @@ footer {
 
             & img {
             max-width: 40px;
-            margin: 7px
+            margin: 7px;
+            filter: invert();
         }
     }
 
@@ -189,4 +190,10 @@ footer {
         justify-content: center;
         align-items: center;
     }
+}
+
+button {
+    background: none;
+    border: none;
+    cursor: pointer;
 }
